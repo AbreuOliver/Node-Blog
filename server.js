@@ -1,12 +1,14 @@
 // IMPORT EXPRESS PACKAGE
-const express = require('express');
+const express = require("express");
+const logger = require("morgan")
+
+// DEFINE VARIABLES
+const server = express(); // SERVER
+const parser = express.json(); // BUILT-IN MIDDLEWARE FUNCTION; PARSES INCOMING REQUESTS WITH JSON PAYLOADS
 
 
-// CREATE THE SERVER
-const server = express();
-
-// APPLY MIDDLEWARE
-server.use(express.json());
+// APPLY GLOBAL MIDDLEWARE
+server.use(parser, logger("dev"));
 
 // handle requests to the root of the api, the / route
 server.get('/', (req, res) => {
