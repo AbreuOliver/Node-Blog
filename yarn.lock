@@ -554,6 +554,11 @@ expand-tilde@^2.0.0, expand-tilde@^2.0.2:
   dependencies:
     homedir-polyfill "^1.0.1"
 
+expresss@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/expresss/-/expresss-0.0.0.tgz#5b33a7f89e7af90d312c4fd649e9020bfc820929"
+  integrity sha1-WzOn+J56+Q0xLE/WSekCC/yCCSk=
+
 extend-shallow@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/extend-shallow/-/extend-shallow-2.0.1.tgz#51af7d614ad9a9f610ea1bafbb989d6b1c56890f"
